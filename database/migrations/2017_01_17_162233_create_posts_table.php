@@ -19,7 +19,7 @@ class CreatePostsTable extends Migration
           $table->string('title');
           $table->string('read_more');
           $table->text('content');
-          $table->unsignedInteger('comment_count');
+          $table->unsignedInteger('comment_count')->default(0);
           $table->timestamps();
           $table->engine = 'MyISAM';
         });
